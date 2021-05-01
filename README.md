@@ -1,3 +1,1 @@
 # Proyecto_CajeroEAN
-"""
-entradas 
