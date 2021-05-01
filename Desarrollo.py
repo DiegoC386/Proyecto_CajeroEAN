@@ -8,19 +8,25 @@ Opcion 3-->int-->3
 Salidas
 Operacion realizada-->float-->OR
 """
-lista=["7890","2345"]
+lista=["CAMILO","2345","JOHAN","1136"]
 while True:
   u=input("digite usuario: ")
-  c=input("digite cintraseña: ") 
+	
+  c=input("digite contraseña: ") 
   if (u==lista[0]):
     if(c==lista[1]):
       print("Bienvenido a cajero EAN: ")
+    else
+     print("no se reconoce contrasña: ")
+  else
+    print("no se reconoce usuario: ")
       break 
+
   Retirar dinero=1
   Consultar saldo=2
   Transferir dinero=3
-
   O=int(input("Digite según la operación que desea realizar: Retirar dinero (1), consultar saldo (2), transferir dinero a otra cuenta (3)"))
+
 
   if(O==1):
     Cantidad a retirar=float(input("Digite la cantidad que desea retirar."))
@@ -42,6 +48,8 @@ while True:
 
     if(cuenta2==x):
       print("Digite el dinero a transferir: ")
+      
+
     
     
   
