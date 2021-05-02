@@ -41,11 +41,10 @@ while conectado:
         Opcion=int(input("Digite una opcion de MENU: "))
         print("")
         if(Opcion==1):
-          
           print ("Su saldo es:", saldo)
           print(".....................................EAN.................................")
           print("")
-        if(Opcion==2):
+        elif(Opcion==2):
           Retiro=int(input("Digite la cantidad que desea retirar: "))
           print(f"Operacion realizada, su saldo actual es: {saldo-Retiro}")
           if Retiro>saldo:
