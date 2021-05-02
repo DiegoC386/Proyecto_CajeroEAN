@@ -35,12 +35,10 @@ while True:
   elif(O==2):
    consultar=int(input("Si requiere consultar el saldo en su cuenta digite (6)"))
     if(verificar==6):
-
       #Según el monto de cada dependencia 
       monto=10000000
       saldo=monto-cantidad a retirar
       print("Saldo actual: "+str(saldo))
-
   elif(0==3):
     Cuenta2=float(input("Ingrese el numero de cuenta a quien desea tranferir: "))
     
@@ -48,6 +46,8 @@ while True:
 
     if(cuenta2==x):
       print("Digite el dinero a transferir: ")
+      555555
+      
       
 
     
