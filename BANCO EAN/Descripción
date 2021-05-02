@@ -1,6 +1,9 @@
 Ya que se debe entregar el 40% del proyecto. Se decidio iniciar con el Banco EAN:
-Se establece un usuario y contraseña predeterminado a la cuenta del Banco
-A este usuario se le da un saldo al usuario en el cajero
-Se le asignan las opciones disponibles que puede ejecutar el usuario en el cajero ean.
 
+1. Se establece un usuario y contraseña predeterminado a la cuenta del Banco
 
+2. A este usuario se le asigna un saldo.
+
+3. Se le asignan las opciones disponibles que puede ejecutar el usuario en el cajero ean.
+
+4. 
