@@ -41,6 +41,7 @@ while conectado:
         Opcion=int(input("Digite una opcion de MENU: "))
         print("")
         if(Opcion==1):
+          
           print ("Su saldo es:", saldo)
           print(".....................................EAN.................................")
           print("")
@@ -65,6 +66,7 @@ while conectado:
           print("Gracias por usar el Cajero EAN")
           print(".....................................EAN.................................")
           print("")
+          break 
         else:
             print("ERROR, Opcion no valida para el cajero EAN")
             break

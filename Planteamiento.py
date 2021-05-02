@@ -1,49 +1,77 @@
 """
-Entradas
+#Entradas
 Usuario-->input-->U
-Contraseña-->int-->C
+Contraseña-->input-->C
 Opcion 1-->int-->1
 Opcion 2-->int-->2
 Opcion 3-->int-->3
-Salidas
-Operacion realizada-->float-->OR
+Opcion 3-->int-->4
+#Salidas
+Operaciones-->float-->O.realizadas
 """
-lista=["CAMILO","2345","JOHAN","1136"]
-while True:
-  u=input("digite usuario: ")
-	
-  c=input("digite contraseña: ") 
-  if (u==lista[0]):
-    if(c==lista[1]):
-      print("Bienvenido a cajero EAN: ")
-    else
-     print("no se reconoce contrasña: ")
-  else
-    print("no se reconoce usuario: ")
-      break 
-
-  Retirar dinero=1
-  Consultar saldo=2
-  Transferir dinero=3
-  O=int(input("Digite según la operación que desea realizar: Retirar dinero (1), consultar saldo (2), transferir dinero a otra cuenta (3)"))
- if(O==1):
-    Cantidad a retirar=float(input("Digite la cantidad que desea retirar."))
-    print("Operacion realizada")
-   
-  elif(O==2):
-   consultar=int(input("Si requiere consultar el saldo en su cuenta digite (6)"))
-    if(verificar==6):
-      #Según el monto de cada dependencia 
-      monto=10000000
-      saldo=monto-cantidad a retirar
-      print("Saldo actual: "+str(saldo))
-  elif(0==3):
-    Cuenta2=float(input("Ingrese el numero de cuenta a quien desea tranferir: "))
-    
-    Cuenta2=x
-
-    if(cuenta2==x):
-      print("Digite el dinero a transferir: ")
-      555555
-
- 
+Cuentas=[]
+print("......................................:CAJERO.EAN:..................................")
+print("Por la seguridad del usuario solo es permitido 3 intentos para ingresar a su cuenta")
+#CAJERO EAN
+usuario="DIEGO"
+passw="1234"
+saldo=500000
+saldo2=100000
+cont=0
+conectado=bool;
+while cont<3:
+    us=input("Ingrese usuario: ");
+    co=input("Ingrese contraseña: ");
+    if us==usuario and passw==co:
+        print ("Bienvenido al sistema")
+        conectado=True
+        break
+    else:
+        cont=cont+1;
+        print ("Usuario y contraseña incorrecta")
+        conectado=False
+while conectado: 
+  print("\t.:MENU:.")
+  print("")
+  print("1. Consultar saldo")
+  print("2. Retirar dinero")
+  print("3. Transferir")
+  print("4. SALIR")
+  print(".....................................EAN.................................")
+  Opcion=int(input("Digite una opcion de MENU: "))
+  print("")
+  break
+if(Opcion==1):
+	print ("Su saldo es:", saldo)
+	print(".....................................EAN.................................")
+	print("")
+	print ("\t.:MENU:.")
+	print("")
+	print ("2. Retirar dinero")
+	print ("3. Transferir")
+	print ("4. SALIR")
+	Opcion=int(input("Digite una opcion de MENU: "))
+	print("")
+if(Opcion==2):
+    Retiro=int(input("Digite la cantidad que desea retirar: "))
+    print(f"Operacion realizada, su saldo actual es: {saldo-Retiro}")
+    if Retiro>saldo:
+      print("No tiene saldo disponible")
+      print(".....................................EAN.................................")
+      print("")
+elif(Opcion==3):
+      cu2=input("Ingrese cuenta a Depositar: ")
+      Cuentas.append(cu2)    
+      monto=int(input("Ingrese monto a Transferir: "))
+      saldo=saldo-monto
+      saldo2=saldo2+monto
+      print ("Se han transferido", monto,"pesos a la cuenta",cu2)
+      print ("El nuevo saldo es:",saldo2)
+      print(".....................................EAN.................................")
+      print("")
+elif(Opcion==4):
+    print("Gracias por usar el Cajero EAN")
+    print(".....................................EAN.................................")
+    print("")
+else:
+      print("ERROR, Opcion no valida para el cajero EAN")
