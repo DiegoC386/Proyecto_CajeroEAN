@@ -37,16 +37,19 @@ while True:
   print("3. Transferir")
   print("4. SALIR")
   print(".....................................EAN.................................")
+	print("")
   Opcion=int(input("Digite una opcion de MENU: "))
   print("")
 	if(Opcion==1):
-         print ("Su saldo es:", saldo)
-				 print(".....................................EAN.................................")
+		print ("Su saldo es:", saldo)
+		print("")
   if(Opcion==2):
-        monto=int(input("Ingrese monto a Retirar:"))    
-        saldo=saldo-monto
-        print ("Ha retirado " , monto)
-        print(".....................................EAN.................................") 
+		Retiro=int(input("Digite la cantidad que desea retirar: "))
+		print(f"Operacion realizada, su saldo actual es: {saldo-Retiro}")
+		if Retiro>saldo:
+			print("No tiene saldo disponible")
+			print(".....................................EAN.................................")
+			print("")
   elif(Opcion==3):
     cu2=input("Ingrese cuenta a Depositar: ")    
     monto=int(input("Ingrese monto a Transferir: "))
@@ -57,7 +60,7 @@ while True:
     print(".....................................EAN.................................")
     print("")
   elif(Opcion==4):
-    print("Gracias por usar el cajero EAN")
+    print("Gracias por usar el Cajero EAN")
     print(".....................................EAN.................................")
     print("")
   else:
