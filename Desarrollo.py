@@ -42,6 +42,7 @@ while True:
   print("")
 	if(Opcion==1):
 		print ("Su saldo es:", saldo)
+		print(".....................................EAN.................................")
 		print("")
   if(Opcion==2):
 		Retiro=int(input("Digite la cantidad que desea retirar: "))
@@ -60,7 +61,7 @@ while True:
     print(".....................................EAN.................................")
     print("")
   elif(Opcion==4):
-    print("Gracias por usar el Cajero EAN")
+		print("Gracias por usar el Cajero EAN")
     print(".....................................EAN.................................")
     print("")
   else:
