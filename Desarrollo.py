@@ -12,26 +12,23 @@ Operaciones-->float-->O.realizadas
 print("......................................:CAJERO.EAN:..................................")
 print("Por la seguridad del usuario solo es permitido 3 intentos para ingresar a su cuenta")
 #CAJERO EAN
-print("")
-contador=1
-lista=["BancoEAN","1234"]
-while contador <=3:
-  u=input("Digite su usuario: ")
-  c=input("Digite contraseña: ") 
-  if (u==lista[0]):
-    if(c==lista[1]):
-      Saldoban=100000
-      print("Bienvenido a cajero EAN: ")
-      contador==4
-      print(".....................................EAN.................................")
+usuario="DIEGO"
+passw="1234"
+saldo=500000
+saldo2=100000
+cont=0
+conectado=bool;
+while cont<3:
+    us=input("Ingrese usuario: ");
+    co=input("Ingrese contraseña: ");
+    if us==usuario and passw==co:
+        print ("Bienvenido al sistema")
+        conectado=True
+        break
     else:
-      print("contraseña incorrecta ")
-  else:
-       print("usuario no recococido")
-       if contador==3:
-           print("comuniquese con el administrrador")
-  contador=contador +1
-  break
+        cont=cont+1;
+        print ("Usuario y contraseña incorrecta")
+        conectado=False
 while True: 
   print("\t.:MENU:.")
   print("")
