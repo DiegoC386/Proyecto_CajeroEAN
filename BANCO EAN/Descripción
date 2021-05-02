@@ -2,8 +2,20 @@ Ya que se debe entregar el 40% del proyecto. Se decidio iniciar con el Banco EAN
 
 1. Se establece un usuario y contraseña predeterminado a la cuenta del Banco
 
-2. A este usuario se le asigna un saldo.
+2. El usuario tiene la posibilidad de ingresar su contraseña y usuario tres veces.
 
-3. Se le asignan las opciones disponibles que puede ejecutar el usuario en el cajero ean.
+3. A este usuario se le asigna un saldo.
 
-4. 
+4. Se establece un segundo salgo para otra cuenta.
+
+5. Se le asignan las opciones disponibles que puede ejecutar el usuario en el cajero ean.
+
+6. Al ejecutar la Opcion 1, el usuario puede consultar su saldo.
+
+7. Al ejecutar la Opcion 2, el usuario puede retirar dinero de su cuenta, pero si lo que 
+retira es mayor al saldo, le pide un segundo intento para ingresar el valor correcto.
+
+8. Al ejecutar la Opcion 3, el usuario puede transferir dinero de su cuenta a otra
+
+9. Al ejecutar la Opcion 4, el usuario puede salir del Cajero.
+
