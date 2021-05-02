@@ -20,16 +20,18 @@ saldo2=100000
 cont=0
 conectado=bool;
 while cont<3:
-          us=input("Ingrese usuario: ");
-          co=input("Ingrese contraseña: ");
-          if us==usuario and passw==co:
-              print ("Bienvenido al sistema")
-              conectado=True
-              break
-          else:
-              cont=cont+1;
-              print ("Usuario y contraseña incorrecta")
-              conectado=False
+    us=input("Ingrese usuario: ");
+    co=input("Ingrese contraseña: ");
+    if us==usuario and passw==co:
+        print ("Bienvenido al sistema")
+        conectado=True
+        break
+    else:
+        cont=cont+1;
+        print ("Usuario y contraseña incorrecta")   
+        else:
+          cont
+        conectado=False
 while conectado: 
         print("\t.:MENU:.")
         print("")
