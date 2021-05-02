@@ -9,9 +9,10 @@ Opcion 3-->int-->4
 #Salidas
 Operaciones-->float-->O.realizadas
 """
+from datetime import datetime
 Cuentas=[]
 print("......................................:CAJERO.EAN:..................................")
-print("Por la seguridad del usuario solo es permitido 3 intentos para ingresar a su cuenta")
+print("Por la seguridad del usuario solo es permitido 3 intentos para ingresar a su cuenta 😎")
 #CAJERO EAN
 usuario="DIEGO"
 passw="1234"
@@ -20,8 +21,8 @@ saldo2=100000
 cont=0
 conectado=bool;
 while cont<3:
-    us=input("Ingrese usuario 🙍: ");
-    co=input("Ingrese contraseña 🔑: ");
+    us=input("Ingrese usuario 🙍 : ");
+    co=input("Ingrese contraseña 🔑 : ");
     if us==usuario and passw==co:
         print("......................................:CAJERO.EAN:..................................")
         print ("Bienvenido al sistema 💰")
@@ -29,16 +30,16 @@ while cont<3:
         break
     else:
         cont=cont+1;
-        print ("Usuario y contraseña incorrecta")
+        print ("Usuario y contraseña incorrecta ❌")
         conectado=False
 while conectado:
         print("......................................:CAJERO.EAN:..................................") 
         print("\t.:MENU:.")
         print("")
-        print("1. Consultar saldo")
-        print("2. Retirar dinero")
-        print("3. Transferir")
-        print("4. SALIR")
+        print("1. Consultar saldo🔍")
+        print("2. Retirar dinero 💵")
+        print("3. Transferir 💸")
+        print("4. SALIR 🔚")
         print("......................................:CAJERO.EAN:..................................")
         Opcion=int(input("Digite una opcion de MENU: "))
         print("")
@@ -50,7 +51,7 @@ while conectado:
           Retiro=int(input("Digite la cantidad que desea retirar: "))
           print(f"Operacion realizada, su saldo actual es: {saldo-Retiro}")
           if Retiro>saldo:
-            print("No tiene saldo disponible")
+            print("No tiene saldo disponible 🙁")
             print("......................................:CAJERO.EAN:..................................")
             print("")
         elif(Opcion==3):
@@ -59,17 +60,17 @@ while conectado:
             monto=int(input("Ingrese monto a Transferir: "))
             saldo=saldo-monto
             saldo2=saldo2+monto
-            print ("Se han transferido", monto,"pesos a la cuenta",cu2)
+            print ("Se han transferido", monto,"pesos a la cuenta",cu2, "✔")
             print ("El nuevo saldo es:",saldo2)
             print("......................................:CAJERO.EAN:..................................")
             print("")
         elif(Opcion==4):
-          print("Gracias por usar el Cajero EAN")
+          print("Gracias por usar el Cajero EAN 🙌")
           print("......................................:CAJERO.EAN:..................................")
           print("")
           break 
         else:
-            print("ERROR, Opcion no valida para el cajero EAN")
+            print("ERROR, Opcion no valida para el cajero EAN 🛑❌")
             break
             input()
 
