@@ -32,43 +32,40 @@ while cont<3:
 while True: 
   print("\t.:MENU:.")
   print("")
-  print("1. consultar saldo")
+  print("1. Consultar saldo")
   print("2. Retirar dinero")
-  print("3. transferir dinero a otra cuenta")
+  print("3. Transferir")
   print("4. SALIR")
   print(".....................................EAN.................................")
   Opcion=int(input("Digite una opcion de MENU: "))
   print("")
   if(Opcion==2):
-      Retiro=float(input("Digite la cantidad que desea retirar: "))
-      print(f"Operacion realizada, su saldo actual es: {Saldoban-Retiro}")
-      if Retiro>Saldoban:
-        print("noTIENE el saldo digitado")
-      else:
-        print(f"Dinero en la cuenta es: {Saldoban-Retiro}")
+      Retiro=int(input("Digite la cantidad que desea retirar: "))
+      print(f"Operacion realizada, su saldo actual es: {saldo-Retiro}")
+      if Retiro>saldo:
+        print("noTIENE el valor digitado")
         print(".....................................EAN.................................") 
   elif(Opcion==1):
-    print(f"Dinero en la cuenta es: {Saldoban}")
+         print ("Su saldo es:", saldo)
+  elif(Opcion==3):
+    cu2=input("Ingrese cuenta a Depositar: ")    
+    monto=int(input("Ingrese monto a Transferir: "))
+    saldo=saldo-monto
+    saldo2=saldo2+monto
+    print ("Se han transferido", monto,"pesos a la cuenta",cu2)
+    print ("El nuevo saldo es:",saldo2)
     print(".....................................EAN.................................")
     print("")
-  elif(Opcion==3):
-    Cuenta2=float(input("Ingrese el numero de cuenta a quien desea tranferir: "))
-    if(Cuenta2==12345):
-        trans=float(input("Digite la cantidad que desea  tranferir: "))
-        print(f"Operacion realizada, su saldo actual es: {Saldoban-trans}")
-        if trans>Saldoban:
-          print("noTIENE el saldo digitado")
-          print(".....................................EAN.................................")
-          print("")
   elif(Opcion==4):
     print("gracias por usar el cajero EAN")
     print(".....................................EAN.................................")
     print("")
   else:
     print("ERROR, Opcion no valida para el cajero EAN")
-    break
-    input()
-    
+  break
+input()
+ 
+
 
 
 
