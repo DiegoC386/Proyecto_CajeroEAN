@@ -10,6 +10,7 @@ Opcion 3-->int-->4
 Operaciones-->float-->O.realizadas
 """
 from datetime import datetime
+datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 Cuentas=[]
 print("......................................:CAJERO.EAN:..................................")
 print("Por la seguridad del usuario solo es permitido 3 intentos para ingresar a su cuenta 😎")
@@ -45,7 +46,7 @@ while conectado:
         print("")
         if(Opcion==1):
           print ("Su saldo es:", saldo)
-          print("......................................:CAJERO.EAN:..................................")
+          pri
           print("")
         elif(Opcion==2):
           Retiro=int(input("Digite la cantidad que desea retirar: "))
@@ -73,10 +74,3 @@ while conectado:
             print("ERROR, Opcion no valida para el cajero EAN 🛑❌")
             break
             input()
-
- 
-
-
-
-
-
