@@ -72,4 +72,4 @@ while conectado:
         else:
             print("ERROR, Opcion no valida para el cajero EAN 🛑 ❌")
             break
-            input()
+            
