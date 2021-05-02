@@ -23,35 +23,35 @@ while cont<3:
     us=input("Ingrese usuario: ");
     co=input("Ingrese contraseña: ");
     if us==usuario and passw==co:
-        print ("Bienvenido al sistema")
+        print("......................................:CAJERO.EAN:..................................")
+        print ("Bienvenido al sistema 💰")
         conectado=True
         break
     else:
         cont=cont+1;
-        print ("Usuario y contraseña incorrecta")   
-        else:
-          cont
+        print ("Usuario y contraseña incorrecta")
         conectado=False
-while conectado: 
+while conectado:
+        print("......................................:CAJERO.EAN:..................................") 
         print("\t.:MENU:.")
         print("")
         print("1. Consultar saldo")
         print("2. Retirar dinero")
         print("3. Transferir")
         print("4. SALIR")
-        print(".....................................EAN.................................")
+        print("......................................:CAJERO.EAN:..................................")
         Opcion=int(input("Digite una opcion de MENU: "))
         print("")
         if(Opcion==1):
           print ("Su saldo es:", saldo)
-          print(".....................................EAN.................................")
+          print("......................................:CAJERO.EAN:..................................")
           print("")
         elif(Opcion==2):
           Retiro=int(input("Digite la cantidad que desea retirar: "))
           print(f"Operacion realizada, su saldo actual es: {saldo-Retiro}")
           if Retiro>saldo:
             print("No tiene saldo disponible")
-            print(".....................................EAN.................................")
+            print("......................................:CAJERO.EAN:..................................")
             print("")
         elif(Opcion==3):
             cu2=input("Ingrese cuenta a Depositar: ")
@@ -61,11 +61,11 @@ while conectado:
             saldo2=saldo2+monto
             print ("Se han transferido", monto,"pesos a la cuenta",cu2)
             print ("El nuevo saldo es:",saldo2)
-            print(".....................................EAN.................................")
+            print("......................................:CAJERO.EAN:..................................")
             print("")
         elif(Opcion==4):
           print("Gracias por usar el Cajero EAN")
-          print(".....................................EAN.................................")
+          print("......................................:CAJERO.EAN:..................................")
           print("")
           break 
         else:
