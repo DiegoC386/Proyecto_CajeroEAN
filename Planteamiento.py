@@ -26,9 +26,7 @@ while True:
   Consultar saldo=2
   Transferir dinero=3
   O=int(input("Digite según la operación que desea realizar: Retirar dinero (1), consultar saldo (2), transferir dinero a otra cuenta (3)"))
-
-
-  if(O==1):
+ if(O==1):
     Cantidad a retirar=float(input("Digite la cantidad que desea retirar."))
     print("Operacion realizada")
    
@@ -47,3 +45,5 @@ while True:
     if(cuenta2==x):
       print("Digite el dinero a transferir: ")
       555555
+
+ 
