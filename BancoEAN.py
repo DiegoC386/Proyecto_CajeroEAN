@@ -46,7 +46,6 @@ while conectado:
         print("")
         if(Opcion==1):
           print ("Su saldo es:", saldo)
-          pri
           print("")
         elif(Opcion==2):
           Retiro=int(input("Digite la cantidad que desea retirar: "))
@@ -63,7 +62,6 @@ while conectado:
             saldo2=saldo2+monto
             print ("Se han transferido", monto,"pesos a la cuenta",cu2, "✔")
             print ("El nuevo saldo es:",saldo2)
-            print("......................................:CAJERO.EAN:..................................")
             print("")
         elif(Opcion==4):
           print("Gracias por usar el Cajero EAN 🙌")
@@ -71,6 +69,6 @@ while conectado:
           print("")
           break 
         else:
-            print("ERROR, Opcion no valida para el cajero EAN 🛑❌")
+            print("ERROR, Opcion no valida para el cajero EAN 🛑 ❌")
             break
             input()
