@@ -10,7 +10,8 @@ Opcion 3-->int-->4
 Operaciones-->float-->O.realizadas
 """
 from datetime import datetime
-datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+ahora=datetime.now()
+print(ahora.strftime('%Y-%m-%d'))
 Cuentas=[]
 print("......................................:CAJERO.EAN:..................................")
 print("Por la seguridad del usuario solo es permitido 3 intentos para ingresar a su cuenta 😎")
