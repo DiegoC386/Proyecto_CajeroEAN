@@ -20,8 +20,8 @@ saldo2=100000
 cont=0
 conectado=bool;
 while cont<3:
-    us=input("Ingrese usuario: ");
-    co=input("Ingrese contraseña: ");
+    us=input("Ingrese usuario 🙍: ");
+    co=input("Ingrese contraseña 🔑: ");
     if us==usuario and passw==co:
         print("......................................:CAJERO.EAN:..................................")
         print ("Bienvenido al sistema 💰")
