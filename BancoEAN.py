@@ -11,7 +11,7 @@ Operaciones-->float-->O.realizadas
 """
 from datetime import datetime
 ahora=datetime.now()
-print(ahora.strftime('%Y-%m-%d'))
+print(ahora.strftime('%Y-%m-%d %H:%M:%S'))
 Cuentas=[]
 print("......................................:CAJERO.EAN:..................................")
 print("Por la seguridad del usuario solo es permitido 3 intentos para ingresar a su cuenta 😎")
