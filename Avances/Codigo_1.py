@@ -43,3 +43,4 @@ while conectado==True:
     elif OP==0:
         break
    "Esto es una mierda"
+"Esto es una mierda"
