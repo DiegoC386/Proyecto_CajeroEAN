@@ -42,3 +42,4 @@ while conectado==True:
         print ("Su saldo es:", saldo)
     elif OP==0:
         break
+   "Esto es una mierda"
