@@ -9,3 +9,5 @@ Opcion 3-->int-->4
 #Salidas
 Operaciones-->int-->O.realizadas
 """
+ 
+  1245
