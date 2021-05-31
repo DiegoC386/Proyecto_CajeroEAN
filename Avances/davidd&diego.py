@@ -71,6 +71,14 @@ while conectado:
           resto20 = resto50 % 2000
           cant10 = resto20 // 1000
           resto10 = resto20 % 1000
+          cant5 = resto10 // 500
+          resto5 = resto10 % 500
+          cant2 = resto5 // 200
+          resto2 = resto5 % 200
+          cant1 = resto2 // 100
+          resto1 = resto2 % 100
+          cantcin = resto1 // 50
+          restocin = resto1 % 50
           print("......................................:CAJERO.EAN:..................................")
           print(" billetes de 50000  a salir 💸: ", cant500)
           print(" billetes de 20000 a salir 💸: ", cant200)
@@ -78,6 +86,10 @@ while conectado:
           print(" billetes de 5000 a salir 💸: ", cant50)
           print(" billetes de 2000 a salir💸: ", cant20)
           print(" billetes de 1000 a salir💸: ", cant10)
+          print(" monedas de 500 a salir💸: ", cant5)
+          print(" monedas de 200 a salir💸: ", cant2)
+          print(" monedas de 100 a salir💸: ", cant1)
+          print(" monedas de 50 a salir💸: ", cantcin)
           print(f"Operacion realizada, su saldo actual es: {saldo-Retiro}")
           saldo=saldo-Retiro
           if Retiro>saldo:
@@ -115,8 +127,8 @@ while conectado:
           print(parqueadero)
         elif(Opcion==2):
           x=int(input("Digite la cantidad de vueltas retirar: "))
-          cant500 = x // 50000
-          resto500 = x % 50000 
+          cant500 = Retiro // 50000
+          resto500 = Retiro % 50000 
           cant200 = resto500 // 20000
           resto200 = resto500 % 20000
           cant100 = resto200 // 10000
@@ -127,6 +139,14 @@ while conectado:
           resto20 = resto50 % 2000
           cant10 = resto20 // 1000
           resto10 = resto20 % 1000
+          cant5 = resto10 // 500
+          resto5 = resto10 % 500
+          cant2 = resto5 // 200
+          resto2 = resto5 % 200
+          cant1 = resto2 // 100
+          resto1 = resto2 % 100
+          cantcin = resto1 // 50
+          restocin = resto1 % 50
           print("......................................:CAJERO.EAN:..................................")
           print(" billetes de 50000  a salir 💸: ", cant500)
           print(" billetes de 20000 a salir 💸: ", cant200)
@@ -134,6 +154,10 @@ while conectado:
           print(" billetes de 5000 a salir 💸: ", cant50)
           print(" billetes de 2000 a salir💸: ", cant20)
           print(" billetes de 1000 a salir💸: ", cant10)
+          print(" monedas de 500 a salir💸: ", cant5)
+          print(" monedas de 200 a salir💸: ", cant2)
+          print(" monedas de 100 a salir💸: ", cant1)
+          print(" monedas de 50 a salir💸: ", cantcin)
           print(f"Operacion realizada, su saldo actual es: {parqueadero-x}")
           parqueadero=parqueadero-x
           if x>parqueadero:
@@ -163,8 +187,8 @@ while conectado:
           print(restaurante)
         elif(Opcion==2):
           x=int(input("Digite la cantidad de vueltas retirar: "))
-          cant500 = x // 50000
-          resto500 = x % 50000 
+          cant500 = Retiro // 50000
+          resto500 = Retiro % 50000 
           cant200 = resto500 // 20000
           resto200 = resto500 % 20000
           cant100 = resto200 // 10000
@@ -175,15 +199,25 @@ while conectado:
           resto20 = resto50 % 2000
           cant10 = resto20 // 1000
           resto10 = resto20 % 1000
+          cant5 = resto10 // 500
+          resto5 = resto10 % 500
+          cant2 = resto5 // 200
+          resto2 = resto5 % 200
+          cant1 = resto2 // 100
+          resto1 = resto2 % 100
+          cantcin = resto1 // 50
+          restocin = resto1 % 50
           print("......................................:CAJERO.EAN:..................................")
           print(" billetes de 50000  a salir 💸: ", cant500)
-          print(" billetes de 20000 a salir 💸: ", cant200)
-          print(" billetes de 10000 a salir 💸: ", cant100)
           print(" billetes de 20000 a salir 💸: ", cant200)
           print(" billetes de 10000 a salir 💸: ", cant100)
           print(" billetes de 5000 a salir 💸: ", cant50)
           print(" billetes de 2000 a salir💸: ", cant20)
           print(" billetes de 1000 a salir💸: ", cant10)
+          print(" monedas de 500 a salir💸: ", cant5)
+          print(" monedas de 200 a salir💸: ", cant2)
+          print(" monedas de 100 a salir💸: ", cant1)
+          print(" monedas de 50 a salir💸: ", cantcin)
           print(f"Operacion realizada, su saldo actual es: {restaurante-x}")
           restaurante=restaurante-x
           if x>restaurante:
