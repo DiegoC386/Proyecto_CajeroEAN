@@ -1,6 +1,6 @@
 
-usuario="DIEGO"
-passw="1234"
+usuario=["DIEGO","nada"]
+passw=["1234","222"]
 ingreso = False
 saldo=500000
 saldo2=100000
