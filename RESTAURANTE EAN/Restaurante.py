@@ -1,4 +1,5 @@
- 
+"""
+#INVENTARIO BILLETES Y MONEDAS
  elif (soporte==3):
         print("")
         print("\t.:MENU RESTAURANTE EAN 🍽️:.")
@@ -49,3 +50,4 @@
         else:
             print("ERROR, Opcion no valida para el cajero EAN 🛑 ❌")
             break
+"""
