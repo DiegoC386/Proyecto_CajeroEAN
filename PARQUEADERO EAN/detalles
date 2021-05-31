@@ -5,13 +5,9 @@
 
 6. Al ejecutar la Opcion 1. el usuario podra Consultar dinero caja.
 
-7. Al ejecutar la Opcion 2, el usuario puede retirar dinero de su cuenta, pero si lo que 
-retira es mayor al saldo, le pide un segundo intento para ingresar el valor correcto.
+7. Al ejecutar la Opcion 2, el usuario puede Retirar vueltas 
 
 8. Al ejecutar la Opcion 3, el usuario puede transferir dinero de su cuenta a otra
 
 9. Al ejecutar la Opcion 4, el usuario puede salir del Cajero.
 
-1. Consultar dinero caja 💵")
-        print("2. Retirar vueltas 🎫")
-        print("3. SALIR 🔚")
