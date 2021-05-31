@@ -9,6 +9,8 @@ Opcion 4-->int-->4
 #Salidas
 Operaciones-->float-->O.realizadas
 """
+iniciar = True
+
 from datetime import datetime
 ahora=datetime.now()
 print(ahora.strftime('%Y-%m-%d %H:%M:%S'))
@@ -16,15 +18,16 @@ Cuentas=[]
 print("......................................:CAJERO.EAN:..................................")
 print("Por la seguridad del usuario solo es permitido 3 intentos para ingresar a su cuenta 😎")
 #CAJERO EAN
-usuario=["DIEGO","nada"]
-passw=["1234","222"]
+usuario="DIEGO"
+passw="1234"
 cont=0
 saldo=500000
 parqueadero=1795000
 restaurante=1795000
 conectado=bool;
 caja=1795000
-while cont<3:
+while True:
+  while cont<3:
     us=input("Ingrese usuario 🙍 : ");
     co=input("Ingrese contraseña 🔑 : ");
     if us==usuario and passw==co:
@@ -42,8 +45,8 @@ while cont<3:
         cont=cont+1;
         print ("Usuario y contraseña incorrecta ❌")
         conectado=False
-while conectado:
-  if (soporte==1): 
+  while conectado:
+    if (soporte==1): 
         print("......................................:CAJERO.EAN:..................................") 
         print("\t.:MENU BANCO:.")
         print("")
@@ -113,7 +116,7 @@ while conectado:
         else:
             print("ERROR, Opcion no valida para el cajero EAN 🛑 ❌")
             break
-  elif(soporte==2):
+    elif(soporte==2):
         print("\t.:MENU PARQUEADERO 🚗:.")
         print("")
         print("1. Consultar dinero caja 💵")
@@ -127,8 +130,8 @@ while conectado:
           print(parqueadero)
         elif(Opcion==2):
           x=int(input("Digite la cantidad de vueltas retirar: "))
-          cant500 = Retiro // 50000
-          resto500 = Retiro % 50000 
+          cant500 = x // 50000
+          resto500 = x % 50000 
           cant200 = resto500 // 20000
           resto200 = resto500 % 20000
           cant100 = resto200 // 10000
@@ -172,7 +175,7 @@ while conectado:
         else:
             print("ERROR, Opcion no valida para el cajero EAN 🛑 ❌")
             break
-  elif (soporte==3):
+    elif (soporte==3):
         print("")
         print("\t.:MENU RESTAURANTE EAN 🍽️:.")
         print("")
@@ -187,8 +190,8 @@ while conectado:
           print(restaurante)
         elif(Opcion==2):
           x=int(input("Digite la cantidad de vueltas retirar: "))
-          cant500 = Retiro // 50000
-          resto500 = Retiro % 50000 
+          cant500 = x // 50000
+          resto500 = x % 50000 
           cant200 = resto500 // 20000
           resto200 = resto500 % 20000
           cant100 = resto200 // 10000
