@@ -105,10 +105,14 @@ while True:
           print("")
         elif(Opcion==3):
             cu2=input("Ingrese cuenta a Depositar: ")
-            Cuentas.append(cu2)    
-            monto=int(input("Ingrese monto a Transferir: "))
-            saldo=saldo-monto
-            saldo2=saldo
+            Cuentas.append(cu2) 
+            try:   
+              monto=int(input("Ingrese monto a Transferir: "))
+              saldo=saldo-monto
+              saldo2=saldo
+            except ValueError:
+              print("solo numeros enteros, INGRESE DE NUEVO 🙁")
+              break
             print ("Se han transferido", monto,"pesos a la cuenta",cu2, "✔")
             print ("El nuevo saldo es:",saldo)
             print("")
