@@ -1,13 +1,12 @@
+NOTA: las funciones corren en cadena.
 
-4. Se establece un saldo en la cuenta cuenta.
+1. Se establece un saldo en la cuenta cuenta.
 
-5. Se le asignan las opciones disponibles que puede ejecutar el usuario en el cajero ean.
+2. Se le asignan las opciones disponibles que puede ejecutar el usuario en el cajero ean.
 
-6. Al ejecutar la Opcion 1. el usuario podra Consultar dinero caja.
+3. Al ejecutar la Opcion 1. el usuario podra Consultar dinero caja.
 
-7. Al ejecutar la Opcion 2, el usuario puede Retirar vueltas 
+4. Al ejecutar la Opcion 2, el usuario puede Retirar vueltas 
 
-8. Al ejecutar la Opcion 3, el usuario puede transferir dinero de su cuenta a otra
-
-9. Al ejecutar la Opcion 4, el usuario puede salir del Cajero.
+5. Al ejecutar la Opcion 3, el usuario podra SALIR 
 
